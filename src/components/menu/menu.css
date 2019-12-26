@@ -1,0 +1,57 @@
+@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    scrollbar-darkshadow-color: black;
+}
+
+.menu {
+    text-align: center;
+    position: fixed;
+    top: 3%;
+    font-size: 2rem;
+    left: 90%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #da4df3;
+    z-index: 10;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu::before {
+    position: relative;
+    top: 25%;
+}
+
+.menu-content {
+    min-width: 30%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #be3ed4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.menu-content button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 10%;
+    border: none;
+    font-size: 1.1rem;
+}
